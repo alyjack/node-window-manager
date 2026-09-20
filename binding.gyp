@@ -19,8 +19,7 @@
             "dxgi.lib",
             "windowscodecs.lib",
             "shcore.lib",
-            "runtimeobject.lib",
-            "windowsapp"
+            "runtimeobject.lib"
           ],
             "defines": [
               "WIN32_LEAN_AND_MEAN",
@@ -32,16 +31,10 @@
                "VCCLCompilerTool": {
                   "ExceptionHandling": 1,
                   "AdditionalOptions": [
-                     "/std:c++17",
+                     "/std:c++20",
                      "/EHsc"
                   ]
                }
-            },
-            "Link": {
-              "AdditionalDependencies": [
-                "runtimeobject.lib",
-                "windowsapp.lib"
-              ]
             }
       	}],
         ["OS=='mac'", {
